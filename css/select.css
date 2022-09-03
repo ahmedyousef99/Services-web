@@ -1,0 +1,116 @@
+/* -------------- This file only for style the input type selector----------- */
+/* -------------- This file only for style the input type selector----------- */
+/* -------------- This file only for style the input type selector----------- */
+/* -------------- This file only for style the input type selector----------- */
+/* -------------- This file only for style the input type selector----------- */
+/* -------------- This file only for style the input type selector----------- */
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  transition: 0.3s;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+  transition: 0.3s;
+  color: red !important;
+}
+
+.select-selected {
+  background: #ffffff;
+  border: 1px solid #e0e0e0 !important;
+  box-sizing: border-box !important ;
+  border-radius: 8px !important;
+  transition: 0.3s;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #014e7b transparent transparent transparent;
+  transition: 0.3s;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #014e7b transparent;
+  top: 7px;
+  transition: 0.3s;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+}
+.select-selected {
+  color: #014e7b;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transition: 0.3s;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+  transition: 0.3s;
+}
+
+.same-as-selected {
+  border-radius: 8px;
+  border-color: #014e7b !important;
+}
+
+.select-items div:hover {
+  color: #014e7b;
+  border-color: #014e7b;
+  border-radius: 8px;
+  padding-left: 8px;
+  border-color: #014e7b !important;
+}
+
+.select-items div:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.select-items div::before {
+  content: " ";
+  display: block;
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #014e7b17;
+  z-index: -1;
+  transition: transform 0.5s ease;
+  border-radius: 8px;
+  transform: scaleX(0);
+}
+
+.select-items div {
+  position: relative;
+}

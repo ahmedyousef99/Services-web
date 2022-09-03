@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <script src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<body>
+      <!-- navbar -----------------  -->
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <div class="side-1 d-flex  align-items-center mb-lg-0 ">
+            <a class="navbar-brand icon ms-0" href="index.html">
+            <i class="fa-brands fa-accusoft"></i>
+          </a>
+          <a href="index.html" class="text-decoration-none"> <span class="namecmp">Name Company</span></a>
+         
+          </div>
+         
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main"
+            aria-controls="main"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav  mb-2 mb-lg-0  ">
+              <li class="nav-item">
+                <li class="nav-item">
+                  <a class="nav-link  hov" aria-current="page" href="index.html#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hov" href="index.html#Services">Services
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hov" href="index.html#About">About us
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hov" href="index.html#Stages">Stages work
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hov" href="index.html#Contact">Contact us
+                  </a>
+                </li>
+                <li class="nav-item ms-lg-auto last-li  ">
+                  <ul class="ms-lg-auto list-unstyled p-0 d-block d-lg-flex align-items-center justify-content-center ">
+                    <li class="nav-item d-flex  mb-lg-0 mt-1 "> 
+                    	<div class="switch">
+                        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                        <label for="language-toggle"></label>
+                        <span class="on d-flex align-items-center"> <img src="image/germany.png" class="img-flag " alt="">  <span>BN</span></span>
+                        <span class="off d-flex align-items-center"><img src="image/united-kingdom.png" class="img-flag " alt="">  <span>EN</span></span>
+                      </div>
+                  
+                     
+                    </li>
+                    <li id="btn-top" class="mt-3 mt-lg-0 ms-lg-3  navbtn"><a href="order project.html" class="btn main-btn  " > Order Project</a></li>
+                  </ul>
+                  
+                 </li>
+            </ul>
+           
+        </div>
+      </nav>
+<!-- navbar -----------------  -->
+
+    <!-- CONTACT -->
+ <div class="featuer-5 py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center ">
+        <div class="info col-lg-6 col-md-12  ">
+          <h3>Start the first step to build your project contact us
+          </h3>
+          <p>Filling in all fields helps us to better understand your project.
+
+          </p>
+          <div class="text-center">
+               <img src="image/Upload file.svg" class="img-fluid " alt="">
+          </div>
+       
+        </div>
+        <div class="col-lg-6 col-md-12 mb-3 ">
+          <form action="" class="row g-3" >
+            <div class="col-md-12 mb-3">
+              <span>Your Name</span>
+              <input
+                      id="contact-name"
+                      name="Name"
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter your full name "
+              />
+              <div id="alert-name" class="alert alert-danger d-none" role="alert">
+                Please provide a valid name.
+
+              </div>
+            </div>
+            <div class="col-md-6">
+              <span>Your Email</span>
+              <input
+                      id="contact-email"
+                      name="Email"
+  
+                      type="email"
+                      class="form-control"
+                      placeholder="Enter your full name"
+  
+              />
+              <div id="alert-email" class="alert alert-danger d-none" role="alert">
+                Please provide a valid Email.
+
+              </div>
+            </div>
+
+
+
+
+
+
+            <div class="col-md-6 mb-3">
+              <span>Your phone number</span>
+              <input
+                      id="contact-phone"
+                      name="Phone"
+                      type="tel"
+                      class="form-control"
+                      placeholder="Enter E-mail"
+  
+              />
+              <div id="alert-phone" class="alert alert-danger d-none" role="alert">
+                Please provide a valid Phone.
+              </div>
+            </div>
+            <div class="col-md-12 mb-3">
+              <span>Select services</span>
+              <div class="custom-select" >
+                <select id="contact-service">
+                  <option value="0"> Select Servicse</option>
+                  
+                  <option value="Website Programming">Website Programming</option>
+                  <option value="Mobile Application">Mobile Application</option>
+                  <option value="Desktop Application">Desktop Application</option>
+                  <option value="Online Marketing">Online Marketing</option>
+                  <option value="Data Management">Data Management</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                 
+                </select>
+              </div>
+             
+
+              
+              <script>
+              var x, i, j, l, ll, selElmnt, a, b, c;
+              /*look for any elements with the class "custom-select":*/
+              x = document.getElementsByClassName("custom-select");
+              l = x.length;
+              for (i = 0; i < l; i++) {
+                selElmnt = x[i].getElementsByTagName("select")[0];
+                ll = selElmnt.length;
+                /*for each element, create a new DIV that will act as the selected item:*/
+                a = document.createElement("DIV");
+                a.setAttribute("class", "select-selected");
+                a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                x[i].appendChild(a);
+                /*for each element, create a new DIV that will contain the option list:*/
+                b = document.createElement("DIV");
+                b.setAttribute("class", "select-items select-hide");
+                for (j = 1; j < ll; j++) {
+                  /*for each option in the original select element,
+                  create a new DIV that will act as an option item:*/
+                  c = document.createElement("DIV");
+                  c.innerHTML = selElmnt.options[j].innerHTML;
+                  c.addEventListener("click", function(e) {
+                      /*when an item is clicked, update the original select box,
+                      and the selected item:*/
+                      var y, i, k, s, h, sl, yl;
+                      s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                      sl = s.length;
+                      h = this.parentNode.previousSibling;
+                      for (i = 0; i < sl; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                          s.selectedIndex = i;
+                          h.innerHTML = this.innerHTML;
+                          y = this.parentNode.getElementsByClassName("same-as-selected");
+                          yl = y.length;
+                          for (k = 0; k < yl; k++) {
+                            y[k].removeAttribute("class");
+                          }
+                          this.setAttribute("class", "same-as-selected");
+                          break;
+                        }
+                      }
+                      h.click();
+                  });
+                  b.appendChild(c);
+                }
+                x[i].appendChild(b);
+                a.addEventListener("click", function(e) {
+                    /*when the select box is clicked, close any other select boxes,
+                    and open/close the current select box:*/
+                    e.stopPropagation();
+                    closeAllSelect(this);
+                    this.nextSibling.classList.toggle("select-hide");
+                    this.classList.toggle("select-arrow-active");
+                  });
+              }
+              function closeAllSelect(elmnt) {
+                /*a function that will close all select boxes in the document,
+                except the current select box:*/
+                var x, y, i, xl, yl, arrNo = [];
+                x = document.getElementsByClassName("select-items");
+                y = document.getElementsByClassName("select-selected");
+                xl = x.length;
+                yl = y.length;
+                for (i = 0; i < yl; i++) {
+                  if (elmnt == y[i]) {
+                    arrNo.push(i)
+                  } else {
+                    y[i].classList.remove("select-arrow-active");
+                  }
+                }
+                for (i = 0; i < xl; i++) {
+                  if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                  }
+                }
+              }
+              /*if the user clicks anywhere outside the select box,
+              then close all select boxes:*/
+              document.addEventListener("click", closeAllSelect);
+              </script>
+               <div id="alert-service" class="alert alert-danger d-none" role="alert">
+                Please select a valid service.
+              </div>
+            
+              
+               
+             
+            </div>
+            <div class="col-md-12 mb-3">
+              <span>more details 
+              </span>
+              <textarea
+              
+                name="details"
+                id=""
+                cols="30"
+                rows="5"
+                class="form-control"
+                placeholder="Enter more details 
+                "
+              ></textarea>
+            </div>
+            <div class="col-md-10 col-lg-12 d-block mb-3">
+              <span>How  we contact you? </span>
+              <br>
+              <div >
+                <input id="email" type="radio" class="messageCheckbox" name="how we contact you" value="Email" checked />
+                <label for="email">Email</label>
+                <div class="col-md-6 mb-3">
+  
+                </div>
+              </div>
+              <div>
+                <input id="phone" type="radio" class="messageCheckbox2" name="how we contact you" value="Phone"   />
+                <label for="phone">Phone</label>
+              </div>
+  
+  
+            </div>
+            <div class="col-md-10 col-lg-12 d-block mb-3">
+              <button type="submit" class="btn main-btn col-lg-6 w-100" value="Send" id="send-btn">Send </button>
+              <div id="alert-send" class="alert alert-success d-none" role="alert">
+                Your information has been sent successfully!
+              </div>
+            </div>
+  
+        
+            
+          
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <style>
+    .alert:not(.alert-success) {
+      padding: 7px;
+    }
+    .alert-success {
+      padding: 15px;
+    }
+  </style>
+    <!-- CONTACT -->
+
+
+
+  
+
+
+    
+
+
+
+
+
+
+      <!-- footer  -->
+      <footer>
+        <div class="container py-5 ">
+          <div class="row ">
+            <div class="company d-flex col-lg-5 col-md-5  mb-4 justify-content-md-start justify-content-lg-start justify-content-center">
+              <a class="navbar-brand icon" href="index.html">
+                <i class="fa-brands fa-accusoft"></i>
+              </a>
+             
+              <a href="index.html" class="text-decoration-none"> <div class="namecmp text-black">Name Company</div></a>
+            </div>
+            <div class="links-1 col-lg-4 col-md-4 mb-4 col-sm-6 text-center text-lg-start text-md-start hov ">
+             
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="Privacy.html" class="nav-link p-0">Privacy Statement</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="imprint.html" class="nav-link p-0">Imprint</a>
+                </li>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-4 text-center text-lg-start text-md-start hov ">
+              <h4>Services</h4>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="Website Programming.html" class="nav-link p-0">Website Programming</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="Mobile Application.html" class="nav-link p-0">Mobile Application</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="desktop application.html" class="nav-link p-0">desktop application</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="online marketing.html" class="nav-link p-0">online marketing</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="Data Management.html" class="nav-link p-0">Data Management</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="graphic design.html" class="nav-link p-0">graphic design</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer  -->
+      <!-- footer-1  -->
+      
+      <div class=" footer-1  ">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-3">
+  <div class="col-md-4 d-flex align-items-center ">
+          
+          <span class=""> All Rights Reserved &copy; 2022 </span>
+        </div>
+        <div class="text-center"></div>
+         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex social ">
+          <li class="ms-4 my-2"><a class="" href="#"><i class="fa-brands fa-facebook-f "></i></a></li>
+          <li class="ms-4 my-2"><a class="" href="#"><i class="fa-brands fa-instagram "></i></a></li>
+          <li class="ms-4 my-2"><a class="" href="#"><i class="fa-brands fa-linkedin-in "></i></a></li>
+        </ul>
+        </div>
+
+
+
+
+
+
+
+
+      
+        
+    
+       
+      </div>
+      <!-- footer-1  -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+
+
+  <!-- ------------ Start Code Java Script For validation the form------------- -->
+  <script>
+    document.getElementById('send-btn').addEventListener('click',function (element){
+      var check_email=document.getElementById('email');
+      var check_phone=document.getElementById('phone');
+      var email=document.getElementById('contact-email');
+      var phone=document.getElementById('contact-phone');
+      var name=document.getElementById('contact-name');
+      var service=document.getElementById('contact-service');
+      var alert_name=document.getElementById('alert-name');
+      var alert_email=document.getElementById('alert-email');
+      var alert_phone=document.getElementById('alert-phone');
+      var alert_service=document.getElementById('alert-service');
+      var alert_send=document.getElementById('alert-send');
+      var flag=false;
+      alert_name.classList.add('d-none');
+      alert_email.classList.add('d-none');
+      alert_phone.classList.add('d-none');
+  
+      alert_service.classList.add('d-none');
+      if (name.value=='') {
+        alert_name.classList.remove('d-none');
+        flag=true;
+      }
+       if (service.value==0) {
+         alert_service.classList.remove('d-none');
+         flag=true;
+       }
+        if (document.querySelector('.messageCheckbox').checked) {
+        if (email.value == '') {
+          alert_email.classList.remove('d-none');
+          flag=true;
+        }
+      }else {
+        if (phone.value == '') {
+          alert_phone.classList.remove('d-none');
+          flag=true;
+        }
+      }
+      element.preventDefault();
+   if (!flag)
+     alert_send.classList.remove('d-none');
+    });
+  </script>
+  <!-- ------------ EndCode Java Script For validation the form------------- -->
+
+</body>
+</html>
